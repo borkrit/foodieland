@@ -1,0 +1,36 @@
+.subscribe{
+  height: 442px;
+
+
+
+
+  &__container{
+    background-color: #E7F9FD;
+    border-radius: 20px;
+      position: relative;
+      height: 100%;
+
+    &:before{
+      content: "";
+      position: absolute;
+      width: 40%;
+      height: 100%;
+      background-image: url("../../assets/images/subscribe_1.svg");
+      background-position: left bottom;
+      background-repeat: no-repeat;
+      left: 0;
+    }
+
+    &:after{
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      right: 0;
+      bottom: 0;
+      background-image: url("../../assets/images/subscribe_2.svg");
+      background-repeat: no-repeat;
+      background-position: right bottom;
+    }
+  }
+}
