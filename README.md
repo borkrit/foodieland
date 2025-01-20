@@ -1,4 +1,4 @@
-# foodieland
+# foodieland 🥬
 
 Project created for fun and practice. 
 
