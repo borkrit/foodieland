@@ -1,6 +1,6 @@
 # foodieland
 
-Project creating for fun and practice. 
+Project created for fun and practice. 
 
 Techologies used HTML/SCSS/JS 
 
