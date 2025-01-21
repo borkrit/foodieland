@@ -1,6 +1,7 @@
 .header{
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-block: 40px;
+  margin-bottom: 40px;
 
   &__container{
     display: flex;
@@ -62,7 +63,7 @@
     display: flex;
     gap: 40px;
     align-items: center;
-    flex: 0 0 125px;
+    flex: 0 0 135px;
   }
   &__item{}
   &__link{}

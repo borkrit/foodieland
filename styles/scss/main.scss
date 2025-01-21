@@ -15,9 +15,15 @@ img{
 
 
 [class*='__container']{
-  max-width: calc(100vw - 180px);
+  max-width: calc(100vw - 160px);
   margin: 0 auto;
 }
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+}
+
 
 @import "components/header";
 @import "components/categories";

@@ -1,10 +1,10 @@
 const CATEGORIES=[
-    {id:1,name:'breakfast',img:'./assets/images/image 25.svg', color:'default'},
-    {id:2,name:'vegan',img:'./assets/images/image 20.svg'},
-    {id:3,name:'meat',img:'./assets/images/image 21.svg'},
-    {id:4,name:'dessert',img:'./assets/images/image 22.svg'},
-    {id:5,name:'lunch',img:'./assets/images/image 23.svg'},
-    {id:6,name:'chocolate',img:'./assets/images/image 24.svg'},
+    {id:1,img:'./assets/images/image 25.svg', name:'breakfast', color:'default'},
+    {id:2,img:'./assets/images/image 20.svg',name:'vegan', color:'green'},
+    {id:3,img:'./assets/images/image 21.svg',name:'meat',color:'red'},
+    {id:4, img:'./assets/images/image 22.svg' , name:'dessert',color:'yellow'},
+    {id:5, img:'./assets/images/image 23.svg', name:'lunch',color:'default'},
+    {id:6,img:'./assets/images/image 24.svg',name:'chocolate',color:'default'},
 ]
 class CreateBlock{
     constructor(wrapperElement,className,content) {
@@ -18,14 +18,15 @@ class CreateBlock{
 
          Object.keys(this.content).map((key)=>{
              if(key === 'name' ){
-               let createTitle = this.#createElement('p',`${this.className}__title`)
+               let createTitle = this.#createElement('p',`${this.className}__item-title`)
                  createTitle.innerText = this.content[key]
                  createdElement.append(createTitle)
              }else if (key === 'img'){
-                 let createImg = this.#createElement('img',`${this.className}__img`)
+                 let createImg = this.#createElement('img',`${this.className}__item-img`)
                  createImg.src = this.content[key]
                  createdElement.append(createImg)
              }
+
          })
 
         appendBlock.append(createdElement)
