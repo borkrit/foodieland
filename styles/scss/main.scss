@@ -2,13 +2,23 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
 }
+
+ul{
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+  height:auto;
+}
+
 
 [class*='__container']{
   max-width: calc(100vw - 180px);
   margin: 0 auto;
 }
 
-
+@import "components/header";
+@import "components/categories";
 @import "components/subscribe";
