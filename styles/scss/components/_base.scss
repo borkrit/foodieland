@@ -1,0 +1,42 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+ul{
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+  height:auto;
+}
+
+
+[class*='__container']{
+  max-width: calc(100vw - 160px);
+  margin: 0 auto;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+}
+
+
+.title{
+  font-size: 48px;
+  font-weight: 600;
+}
+
+//painting svg
+svg{
+  color: transparent;
+  &.liked{
+    path{
+      fill:red;
+    }
+  }
+}
